@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML test</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h2>Ordered List</h2>
+    <ol type="I">
+      <li>Nairobi</li>
+      <li>Mombasa</li>
+      <li>Kisumu</li>
+    </ol>
+
+    <h2>pexel Image</h2>
+    <img
+      src="https://images.pexels.com/photos/5474296/pexels-photo-5474296.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+      alt="Pexels Image"
+      width="300"
+    />
+
+    <h2>Contacts</h2>
+    <table border="2">
+      <tr>
+        <th>Name</th>
+        <th>Phone</th>
+        <th>Home</th>
+      </tr>
+      <tr>
+        <td>John Kibe</td>
+        <td>0712345678</td>
+        <td>joni@hotmail.com</td>
+      </tr>
+      <tr>
+        <td>Manzi wa mtaa</td>
+        <td>1234567890</td>
+        <td>mdenge@gmail.com</td>
+      </tr>
+      <tr>
+        <td>Robert Auko</td>
+        <td>0709876543</td>
+        <td>doctor@ksm.com</td>
+      </tr>
+      <tr>
+        <td>Kismat kim</td>
+        <td>0712345678</td>
+        <td>kim@proton.com</td>
+      </tr>
+      <tr>
+        <td>Michael Olunga</td>
+        <td>0987654321</td>
+        <td>michael@harambee.com</td>
+      </tr>
+    </table>
+
+    <h2>Registration Form</h2>
+    <form>
+      <label for="name">Name:</label>
+      <input
+        type="text"
+        id="name"
+        name="name"
+        placeholder="Enter your name"
+        required
+      /><br />
+
+      <label for="email">Email:</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="Enter your email"
+        required
+      /><br />
+
+      <label for="password">Password:</label>
+      <input
+        type="password"
+        id="password"
+        name="password"
+        placeholder="Enter password"
+        required
+        minlength="6"
+      /><br />
+
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" name="dob" required /><br />
+
+      <label for="country">Country:</label>
+      <select id="country" name="country" required>
+        <option value="">Select your country</option>
+        <option value="ke">Kenya</option>
+        <option value="ug">Uganda</option>
+        <option value="Tz">Tanzania</option>
+        <option value="rwd">Rwanda</option></select
+      ><br />
+
+      <label>Gender:</label>
+      <input type="radio" id="male" name="gender" value="Male" required />
+      <label for="male">Male</label>
+      <input type="radio" id="female" name="gender" value="Female" required />
+      <label for="female">Female</label><br />
+
+      <label>Interests:</label>
+      <input type="checkbox" id="coding" name="interests" value="Coding" />
+      <label for="coding">Coding</label>
+      <input type="checkbox" id="sports" name="interests" value="Sports" />
+      <label for="sports">Sports</label>
+      <input type="checkbox" id="music" name="interests" value="Music" />
+      <label for="music">Music</label><br />
+
+      <button type="submit">Register</button>
+    </form>
+  </body>
+</html>
